@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Configuração global da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* classe de formatação */
+.no-weight{
+    font-weight: 400;
+}
+
+/* Div principal */
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Inicio Cabeçalho */
+header{
+    color: #fff;
+    width: 100%;
+    height: 70%;
+    background-image: url(../images/pexels-yan-krukau-9071735.jpg);
+    background-position: center center;
+    background-size: 100%;
+    text-align: center;
+}
+
+.header-menu{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 4rem;
+    align-items: center;
+}
+
+.header-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    padding: .5rem;
+    transition: all 0.3s;
+}
+
+.header-menu-support{
+    display: flex;
+    gap: 14px;
+}
+
+.header-menu-support > a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.header-titles{
+    margin-top: 7rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-titles > h1{
+    font-size: 3rem;
+}
+
+.header-titles > h2{
+    font-size: 2rem;
+}
+/* Fim cabeçalho */
+
+/* Inicio Area da Categorias */
+
+.categories{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+}
+
+.categories-title > h2{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.categories-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.categories-name{
+    display: flex;
+    gap: 3rem;
+}
+
+.categories-name > a{
+    color: #000;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.categories-name > a:hover{
+    text-decoration: underline;
+}
+
+.categories-name > #selected{
+    text-decoration: underline;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.categories-images{
+    margin-top: 3rem;
+    min-width: 100%;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.categories-item > img{
+    width: 90%;
+    margin-top: 3rem;
+}
+
+.categories-item{
+    min-width: 27rem;
+    max-width: 28rem;
+    min-height: 32rem;
+    background-color: #f1eeff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.categories-item:hover{
+    box-shadow: 1px 1px 10px rgba(153, 45, 255, 0.5);
+    transform: scale(1.045);
+}
+/* Fim Area da Categorias */
+
+/* Inicio Area promocional */
+.acess-area{
+    margin-top: 2rem;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acess-area-background{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+    border-radius: 1rem;
+    background: linear-gradient(to left,#d9d4fc, #f3cfdb);
+}
+
+.acess-info{
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.acess-info > h3{
+    font-size: 2.5rem;
+}
+
+.acess-info > a{
+    width: 130px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: #3300ff;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.acess-info > a:hover{
+    background-color: #704cff;
+    transform: scale(1.1);
+}
+
+.acess-area-background > img{
+    width: 16%;
+}
+
+/* Fim Area promocional */
+
+/* Inicio Area sobre a empresa */
+.about{
+    margin-top: 3rem;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/nitendo.jpg);
+    background-position: center center;
+    background-size: 80%;
+}
+
+.about-text{
+    width: 80%;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+/* Fim Area sobre a empresa */
+
+/* Inicio Area para receber emails*/
+.receive-emails{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.receive-emails > h1{
+    font-size: 2.8rem;
+}
+
+.receive-form{
+    margin-top: 3rem;
+    width: 50%;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.inputs > label{
+    font-size: 1.2rem;
+    margin-right: 8px;
+    font-weight: 700;
+}
+
+.inputs > input{
+    border-radius: 1rem;
+    border: 1px solid #000;
+    width: 400px;
+    height: 28px;
+    padding: 10px;
+}
+
+form > input{
+    border-radius: 1rem;
+    width: 100px;
+    height: 40px;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    background-color: #3300ff;
+    transition: all .3s;
+}
+
+form > input:hover{
+    background-color: #704cff;
+    transform: scale(1.1);
+}
+/* Fim Area sobre a empresa */
+
+/* Inicio roda pé */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    background-color: #262626;
+}
+
+.footer-menu{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 4rem;
+    align-items: center;
+}
+
+.footer-menu > a{
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu > a:hover{
+    text-decoration: underline;
+}
+/* Fim roda pé */

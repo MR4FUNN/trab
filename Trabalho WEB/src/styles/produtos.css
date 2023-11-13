@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Configuração global da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Inicio Cabeçalho */
+header{
+    color: #fff;
+    width: 100%;
+    height: 24%;
+    background-image: url(../images/figma/call\ of\ duty.jpg);
+    background-position: center center;
+    background-size: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title{
+    padding: 1.5rem;
+}
+
+.title > a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: .4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.search-product{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-product > form > .inputs{
+    display: flex;
+    gap: 1.4rem;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.search-product > form > .inputs #search{
+    width: 30rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 12px;
+}
+
+.search-product > form > .inputs #submit{
+    padding: 4px;
+    border: none;
+    background: none;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-action{
+    width: 100%;
+    margin-top: 2rem;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 1.5rem;
+}
+
+.buttons-action > a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.334s;
+}
+
+.buttons-action > a:hover{
+    background-color: #bdbdbd;
+}
+
+.products{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.products-btn{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.products-btn #btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3ce6fd;
+    height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.products-btn #btn1:hover{
+    background-color: #30b4c5;
+}
+
+.products-btn #btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffbbba;
+    height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.products-btn #btn2:hover{
+    background-color: #c29090;
+}
+
+.products-apresentation{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.item{
+    min-width: 23rem;
+    max-width: 24rem;
+    min-height: 32rem;
+    background-color: #f1eeff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.item:hover{
+    transform: scale(1.1);
+}
+
+.products-apresentation > .item > #height-img{
+    width: 68%;
+}
+
+.products-apresentation > .item > img{
+    width: 85%;
+}
+
+.products-apresentation > .item > .item-description {
+    text-align: center;
+}
+
+.products-apresentation > .item > .item-description > .description{
+    padding: 0 2rem;
+    background-color: #bdbdbd;
+}
+
+
+footer{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    background-image: url(../images/figma/gta\ wallpaper.jpg);
+    background-position: center center;
+    background-size: 100%;
+}
+
+.footer-menu{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 4rem;
+    align-items: center;
+}
+
+.footer-menu > a{
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-menu > a:hover{
+    text-decoration: underline;
+}
